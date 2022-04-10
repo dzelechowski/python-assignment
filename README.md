@@ -2,12 +2,13 @@
 
 In order to run tests, please check the e-mail with the basic auth credentials.
 
-Tests can be run:
-directly by using pytest command. 
+Tests can be run by using:
+
+pytest
 ```
 BASIC_AUTH={credentials} pytest tests/test_clients.py -vv
-```
-or docker
+``` 
+docker
 ```
 docker build --tag clients-tests .
 docker run -e BASIC_AUTH={credentials} clients-tests
